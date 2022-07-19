@@ -26,6 +26,9 @@
       "@configs/*": [
         "./configs/*"
       ],
+      "@styles/*": [
+        "./styles/*"
+      ],
     }
   },
   "include": [
