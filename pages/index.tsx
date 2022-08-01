@@ -1,6 +1,8 @@
-import React, { FC } from "react";
+import React from "react";
+import Layout from "@/components/Layout";
+import type { NextPageWithLayout } from "./_app";
 
-const HomePage: FC = () => {
+const HomePage: NextPageWithLayout = () => {
   return (
     <h1
       style={{
@@ -12,6 +14,9 @@ const HomePage: FC = () => {
       Welcome to Three.js workshop №1 📚
     </h1>
   );
+};
+HomePage.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
 };
 
 export default HomePage;
