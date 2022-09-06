@@ -81,30 +81,6 @@ export const GlobalStyles = createGlobalStyle`
     transition: background-color 5000s ease-in-out 5000s !important;
   }
 
-  // Main styles
-  main {
-    /* padding-top: 92px; */
-    @media ${screen.lp} {
-      /* padding-top: 78px; */
-    }
-    @media ${screen.md} {
-      /* padding-top: 78px; */
-    }
-  }
-
-  // Gatsby styles
-  #gatsby-focus-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    outline: none !important;
-  }
-
-  #___gatsby {
-    outline: none !important;
-  }
-
   // Heading styles
   h1 {
     font-size: 30px;
@@ -180,4 +156,5 @@ export const Container = styled.div`
   padding: 0 6.25%;
   max-width: 1259px;
   box-sizing: content-box;
+  width: 100%;
 `;
