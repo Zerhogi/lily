@@ -34,3 +34,20 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Overpass';
+    src: local('Overpass Italic'), local('Overpass-Italic'), url('/fonts/Overpass/Overpass-Italic.woff2') format('woff2'),
+        url('/fonts/Overpass/Overpass-Italic.woff') format('woff'), url('/fonts/Overpass/Overpass-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Marck Script';
+    src: local('Marck Script'), local('Marck-Script'), url('/fonts/MarckScript/MarckScript-Regular.woff2') format('woff2'),
+        url('/fonts/MarckScript/MarckScript-Regular.woff') format('woff'), url('/fonts/MarckScript/MarckScript-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

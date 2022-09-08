@@ -18,13 +18,20 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     position: relative;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Overpass', sans-serif;
     line-height: 170%;
     font-size: 16px;
-    color: #0C215A;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     overflow: visible;
+    background-color: rgba(0,0,0,0.99);
+    @media ${screen.md} {
+      font-size: 18px;
+    }
+    main{
+      overflow: hidden;
+    }
   }
 
   a {
@@ -81,80 +88,31 @@ export const GlobalStyles = createGlobalStyle`
     transition: background-color 5000s ease-in-out 5000s !important;
   }
 
-  // Heading styles
-  h1 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.3;
-    color: #0C215A;
-    @media ${screen.lp} {
-      font-size: 64px;
-      line-height: 1.1;
-      letter-spacing: -0.05em;
-    }
-  }
-
-  h2 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.4;
-    color: #0C215A;
-    @media ${screen.lp} {
-      font-size: 44px;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-    }
-  }
-
-  h3 {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.5;
-    color: #0C215A;
-    @media ${screen.lp} {
-      font-size: 30px;
-      line-height: 1.3;
-      letter-spacing: unset;
-    }
-  }
-
-  h4 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.4;
-    color: #0C215A;
-    @media ${screen.lp} {
-      font-size: 24px;
-    }
-  }
-
-  h5 {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.4;
-    color: #0C215A;
-    @media ${screen.lp} {
-      font-size: 20px;
-      letter-spacing: -0.02em;
-    }
-  }
-
-  h6 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.4;
-    color: #0C215A;
-    @media ${screen.lp} {
-      font-size: 14px;
-      letter-spacing: -0.02em;
-    }
-  }
 `;
 
 export const Container = styled.div`
-  margin: 0 auto;
-  padding: 0 6.25%;
+  padding: 0 10px;
   max-width: 1259px;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  margin: 0 auto;
   width: 100%;
+  @media ${screen.sm} {
+    padding: 0 60px;
+  }
+`;
+
+export const SectionTitle = styled.h2`
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  @media ${screen.lp} {
+    font-size: 3rem;
+  }
+  @media ${screen.md} {
+    font-size: 4rem;
+  }
 `;
