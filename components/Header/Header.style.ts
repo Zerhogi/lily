@@ -3,7 +3,6 @@ import styled from "styled-components";
 interface HeaderComponentProps {}
 
 export const HeaderComponent = styled.header<HeaderComponentProps>`
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
